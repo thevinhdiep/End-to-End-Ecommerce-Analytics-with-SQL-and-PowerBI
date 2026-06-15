@@ -1,0 +1,43 @@
+Product_Id,Product,Category_Id,Product_Category
+PRD0001,Bike Tyres,CAT0001,Auto & Accessories
+PRD0002,Car & Bike Care,CAT0001,Auto & Accessories
+PRD0003,Car Body Covers,CAT0001,Auto & Accessories
+PRD0004,Car Mat,CAT0001,Auto & Accessories
+PRD0005,Car Media Players,CAT0001,Auto & Accessories
+PRD0006,Car Pillow & Neck Rest,CAT0001,Auto & Accessories
+PRD0007,Car Seat Covers,CAT0001,Auto & Accessories
+PRD0008,Car Speakers,CAT0001,Auto & Accessories
+PRD0009,Tyre,CAT0001,Auto & Accessories
+PRD0010,Apple Laptop,CAT0002,Electronic
+PRD0011,Fans,CAT0002,Electronic
+PRD0012,Iron,CAT0002,Electronic
+PRD0013,Keyboard,CAT0002,Electronic
+PRD0014,LCD,CAT0002,Electronic
+PRD0015,LED,CAT0002,Electronic
+PRD0016,Mixer/Juicer,CAT0002,Electronic
+PRD0017,Mouse,CAT0002,Electronic
+PRD0018,Samsung Mobile,CAT0002,Electronic
+PRD0019,Speakers,CAT0002,Electronic
+PRD0020,Tablet,CAT0002,Electronic
+PRD0021,Watch,CAT0002,Electronic
+PRD0022,Casula Shoes,CAT0003,Fashion
+PRD0023,Formal Shoes,CAT0003,Fashion
+PRD0024,Fossil Watch,CAT0003,Fashion
+PRD0025,Jeans,CAT0003,Fashion
+PRD0026,Running Shoes,CAT0003,Fashion
+PRD0027,Shirts,CAT0003,Fashion
+PRD0028,Sneakers,CAT0003,Fashion
+PRD0029,Sports Wear,CAT0003,Fashion
+PRD0030,Suits,CAT0003,Fashion
+PRD0031,T - Shirts,CAT0003,Fashion
+PRD0032,Titak watch,CAT0003,Fashion
+PRD0033,Bed Sheets,CAT0004,Home & Furniture
+PRD0034,Beds,CAT0004,Home & Furniture
+PRD0035,Curtains,CAT0004,Home & Furniture
+PRD0036,Dinner Crockery,CAT0004,Home & Furniture
+PRD0037,Dinning Tables,CAT0004,Home & Furniture
+PRD0038,Shoe Rack,CAT0004,Home & Furniture
+PRD0039,Sofa Covers,CAT0004,Home & Furniture
+PRD0040,Sofas,CAT0004,Home & Furniture
+PRD0041,Towels,CAT0004,Home & Furniture
+PRD0042,Umbrellas,CAT0004,Home & Furniture

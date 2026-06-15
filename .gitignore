@@ -20,3 +20,6 @@ env/
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Root-level dataset (data is in data/raw/ and data/cleaned/)
+/E-commerce Dataset.csv
