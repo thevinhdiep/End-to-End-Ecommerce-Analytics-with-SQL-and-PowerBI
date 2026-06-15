@@ -1,0 +1,5 @@
+Product_Category,orders,customers,products,revenue,quantity,profit,shipping_cost,avg_discount,profit_margin,shipping_cost_ratio,revenue_share
+Fashion,25646,22338,11,4345914.0,66639.0,2072623.9,207237.9,0.356,0.4769,0.0477,0.5562
+Home & Furniture,15438,12830,10,1975831.0,38190.0,880058.9,88054.5,0.2859,0.4454,0.0446,0.2529
+Auto & Accessories,7505,7003,9,1096928.0,17593.0,484313.2,48426.2,0.2142,0.4415,0.0441,0.1404
+Electronic,2701,2633,12,394738.0,5951.0,174190.6,17435.8,0.1597,0.4413,0.0442,0.0505

@@ -1,0 +1,9 @@
+csv_line_number,Order_Date,Time,Aging,Customer_Id,Gender,Device_Type,Customer_Login_type,Product_Category,Product,Sales,Quantity,Discount,Profit,Shipping_Cost,Order_Priority,Payment_method,missing_columns
+29,2018-05-02,11:45:38,,26058,Female,Web,Member,Auto & Accessories,Car Media Players,140.0,1.0,0.3,55.8,5.6,High,credit_card,Aging
+97,2018-04-22,11:32:22,5.0,52267,Male,Web,Member,Auto & Accessories,Bike Tyres,72.0,,0.1,36.0,3.6,Critical,credit_card,Quantity
+213,2018-08-05,17:27:54,6.0,47137,Male,Web,Member,Auto & Accessories,Tyre,250.0,5.0,,132.5,13.3,Medium,credit_card,Discount
+323,2018-06-05,11:04:11,3.0,41850,Male,Web,Member,Auto & Accessories,Car Mat,54.0,,0.2,54.0,5.4,Critical,credit_card,Quantity
+537,2018-04-16,16:20:02,3.0,13777,Male,Web,Member,Auto & Accessories,Tyre,250.0,4.0,0.2,150.0,,Critical,credit_card,Shipping_Cost
+627,2018-10-15,20:16:34,2.0,26367,Male,Web,Member,Auto & Accessories,Tyre,250.0,4.0,0.3,140.0,14.0,,debit_card,Order_Priority
+793,2018-07-03,23:40:16,4.0,36902,Female,Web,Member,Auto & Accessories,Car Pillow & Neck Rest,231.0,1.0,0.1,148.7,14.9,,money_order,Order_Priority
+795,2018-05-16,21:30:59,6.0,16381,Male,Web,Member,Auto & Accessories,Car Speakers,,1.0,0.1,124.7,12.5,Critical,credit_card,Sales

@@ -1,0 +1,7 @@
+column_name,missing_count,missing_percent
+Order_Priority,2,0.0039
+Quantity,2,0.0039
+Aging,1,0.0019
+Discount,1,0.0019
+Sales,1,0.0019
+Shipping_Cost,1,0.0019

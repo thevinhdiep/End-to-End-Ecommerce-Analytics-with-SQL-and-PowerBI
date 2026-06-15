@@ -1,0 +1,23 @@
+column_name,value,row_count,row_percent
+Gender,Male,28138,54.8606
+Gender,Female,23152,45.1394
+Device_Type,Web,47632,92.868
+Device_Type,Mobile,3658,7.132
+Customer_Login_type,Member,49097,95.7243
+Customer_Login_type,Guest,1993,3.8857
+Customer_Login_type,First SignUp,173,0.3373
+Customer_Login_type,New ,27,0.0526
+Product_Category,Fashion,25646,50.0019
+Product_Category,Home & Furniture,15438,30.0994
+Product_Category,Auto & Accessories,7505,14.6325
+Product_Category,Electronic,2701,5.2661
+Order_Priority,Medium,29433,57.3855
+Order_Priority,High,15499,30.2184
+Order_Priority,Critical,3932,7.6662
+Order_Priority,Low,2424,4.7261
+Order_Priority,<missing>,2,0.0039
+Payment_method,credit_card,38137,74.3556
+Payment_method,money_order,9629,18.7736
+Payment_method,e_wallet,2789,5.4377
+Payment_method,debit_card,734,1.4311
+Payment_method,not_defined,1,0.0019

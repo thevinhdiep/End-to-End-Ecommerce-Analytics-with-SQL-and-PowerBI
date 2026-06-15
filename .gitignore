@@ -1,0 +1,22 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Temporary and backup files
+*.tmp
+*.bak
+*.old
+~$*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
