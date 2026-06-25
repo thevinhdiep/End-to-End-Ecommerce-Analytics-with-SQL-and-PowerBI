@@ -29,7 +29,7 @@ Dự án này là một **giải pháp phân tích dữ liệu toàn diện (Ful
 | **Phase 3 - Data Modeling** | ✅ Hoàn thành | `docs/data_model.md` (Sơ đồ ERD) |
 | **Phase 4 - Data Warehouse** | ✅ Hoàn thành | `sql/01_create_schema.sql` |
 | **Phase 5 - ETL Pipeline** | ✅ Hoàn thành | `sql/02_etl_pipeline.sql` |
-| **Phase 6 - Data Validation** | ⏳ Chưa bắt đầu | Validation SQL scripts |
+| **Phase 6 - Data Validation** | ✅ Hoàn thành | `sql/03_data_validation.sql` |
 | **Phase 7 - SQL Analytics** | ⏳ Chưa bắt đầu | Báo cáo phân tích kinh doanh bằng SQL |
 | **Phase 8 - Business Insights**| ⏳ Chưa bắt đầu | Báo cáo khuyến nghị và tổng kết |
 | **Phase 9 - Power BI Dashboard**| ⏳ Chưa bắt đầu | File `.pbix` và hình ảnh Dashboard |
