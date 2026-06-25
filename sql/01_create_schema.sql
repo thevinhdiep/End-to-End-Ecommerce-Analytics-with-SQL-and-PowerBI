@@ -12,11 +12,17 @@ GO
 USE EcommerceDB;
 GO
 
--- 1. Tạo các bảng Dimension (Chiều phân tích)
+-- 1. Xóa các bảng cũ nếu đã tồn tại (Phải xóa bảng Fact trước để không vi phạm Khóa ngoại)
+IF OBJECT_ID('fact_sales', 'U') IS NOT NULL DROP TABLE fact_sales;
+IF OBJECT_ID('dim_customer', 'U') IS NOT NULL DROP TABLE dim_customer;
+IF OBJECT_ID('dim_product', 'U') IS NOT NULL DROP TABLE dim_product;
+IF OBJECT_ID('dim_date', 'U') IS NOT NULL DROP TABLE dim_date;
+
+-- =========================================================
+-- 2. Tạo các bảng Dimension (Chiều phân tích)
 -- =========================================================
 
 -- Bảng Khách hàng
-IF OBJECT_ID('dim_customer', 'U') IS NOT NULL DROP TABLE dim_customer;
 CREATE TABLE dim_customer (
     customer_id VARCHAR(50) PRIMARY KEY,
     gender VARCHAR(20),
@@ -26,7 +32,6 @@ CREATE TABLE dim_customer (
 GO
 
 -- Bảng Sản phẩm
-IF OBJECT_ID('dim_product', 'U') IS NOT NULL DROP TABLE dim_product;
 CREATE TABLE dim_product (
     product_id VARCHAR(50) PRIMARY KEY,
     product_name NVARCHAR(255),
@@ -35,7 +40,6 @@ CREATE TABLE dim_product (
 GO
 
 -- Bảng Thời gian
-IF OBJECT_ID('dim_date', 'U') IS NOT NULL DROP TABLE dim_date;
 CREATE TABLE dim_date (
     date_id DATE PRIMARY KEY,
     order_month VARCHAR(20),
@@ -44,10 +48,9 @@ CREATE TABLE dim_date (
 );
 GO
 
--- 2. Tạo bảng Fact (Bảng Giao dịch/Sự kiện)
+-- 3. Tạo bảng Fact (Bảng Giao dịch/Sự kiện)
 -- =========================================================
 
-IF OBJECT_ID('fact_sales', 'U') IS NOT NULL DROP TABLE fact_sales;
 CREATE TABLE fact_sales (
     order_id VARCHAR(50) PRIMARY KEY,
     customer_id VARCHAR(50) NOT NULL,

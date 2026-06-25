@@ -61,31 +61,38 @@ GO
 -- 2.1 Load vào dim_customer
 -- Dùng cú pháp INSERT ... SELECT DISTINCT để lọc các giá trị duy nhất
 INSERT INTO dim_customer (customer_id, gender, device_type, customer_login_type)
-SELECT DISTINCT 
-    customer_id, 
-    gender, 
-    device_type, 
-    customer_login_type
-FROM staging_orders
-WHERE customer_id IS NOT NULL
-  AND customer_id NOT IN (SELECT customer_id FROM dim_customer);
+SELECT customer_id, gender, device_type, customer_login_type
+FROM (
+    SELECT 
+        customer_id, 
+        gender, 
+        device_type, 
+        customer_login_type,
+        ROW_NUMBER() OVER(PARTITION BY customer_id ORDER BY order_date DESC) as rn
+    FROM staging_orders
+    WHERE customer_id IS NOT NULL 
+      AND customer_id NOT IN (SELECT customer_id FROM dim_customer)
+) t
+WHERE rn = 1;
 GO
 
 -- 2.2 Load vào dim_product
 -- Vì data gốc không có product_id, ta tạo mã tự động (VD: PRD_00001) dựa trên hàm ROW_NUMBER()
--- Dùng CTE để lấy danh sách sản phẩm unique trước
-WITH DistinctProducts AS (
-    SELECT DISTINCT product, product_category
-    FROM staging_orders
-    WHERE product IS NOT NULL
-)
 INSERT INTO dim_product (product_id, product_name, product_category)
 SELECT 
-    'PRD_' + RIGHT('00000' + CAST(ROW_NUMBER() OVER(ORDER BY product) AS VARCHAR(10)), 5) AS product_id,
-    product,
+    CONCAT('PRD_', RIGHT('00000' + CAST(ROW_NUMBER() OVER(ORDER BY product) AS VARCHAR), 5)) AS product_id,
+    product AS product_name,
     product_category
-FROM DistinctProducts
-WHERE product NOT IN (SELECT product_name FROM dim_product);
+FROM (
+    SELECT 
+        product, 
+        product_category,
+        ROW_NUMBER() OVER(PARTITION BY product ORDER BY order_date DESC) as rn
+    FROM staging_orders
+    WHERE product IS NOT NULL 
+      AND product NOT IN (SELECT product_name FROM dim_product)
+) t
+WHERE rn = 1;
 GO
 
 -- 2.3 Load vào dim_date
