@@ -1,5 +1,10 @@
 # **🛍️ Phân Tích Dữ Liệu & Hành Vi Khách Hàng E-Commerce (End-to-End Analytics)**
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC292B?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+
 ## **🔎 1. Tổng quan dự án (Project Overview)**
 
 Dự án này là một **giải pháp phân tích dữ liệu toàn diện (Full-Stack Data Solution)** cho doanh nghiệp thương mại điện tử dựa trên tập dữ liệu lịch sử năm 2018 (hơn 51,000 đơn hàng). Quy trình triển khai chuyên nghiệp và khép kín qua các trụ cột cốt lõi:
@@ -33,7 +38,7 @@ Dự án này là một **giải pháp phân tích dữ liệu toàn diện (Ful
 | **Phase 7 - SQL Analytics** | ✅ Hoàn thành | `sql/04_business_analytics.sql` |
 | **Phase 8 - Business Insights**| ✅ Hoàn thành | `reports/executive_summary.md`, `reports/business_recommendations.md` |
 | **Phase 9 - Power BI Dashboard**| ✅ Hoàn thành | `dashboard/README.md`, `dashboard/dashboard_mockup.png` |
-| **Phase 10 - Final Repository** | ⏳ Chưa bắt đầu | Cấu trúc lại toàn bộ kho lưu trữ |
+| **Phase 10 - Final Repository** | ✅ Hoàn thành | Hoàn thiện cấu trúc thư mục, badges và tài liệu |
 
 ---
 
