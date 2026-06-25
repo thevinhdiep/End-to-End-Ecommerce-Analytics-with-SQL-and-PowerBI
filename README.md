@@ -31,7 +31,7 @@ Dự án này là một **giải pháp phân tích dữ liệu toàn diện (Ful
 | **Phase 5 - ETL Pipeline** | ✅ Hoàn thành | `sql/02_etl_pipeline.sql` |
 | **Phase 6 - Data Validation** | ✅ Hoàn thành | `sql/03_data_validation.sql` |
 | **Phase 7 - SQL Analytics** | ✅ Hoàn thành | `sql/04_business_analytics.sql` |
-| **Phase 8 - Business Insights**| ⏳ Chưa bắt đầu | Báo cáo khuyến nghị và tổng kết |
+| **Phase 8 - Business Insights**| ✅ Hoàn thành | `reports/executive_summary.md`, `reports/business_recommendations.md` |
 | **Phase 9 - Power BI Dashboard**| ⏳ Chưa bắt đầu | File `.pbix` và hình ảnh Dashboard |
 | **Phase 10 - Final Repository** | ⏳ Chưa bắt đầu | Cấu trúc lại toàn bộ kho lưu trữ |
 

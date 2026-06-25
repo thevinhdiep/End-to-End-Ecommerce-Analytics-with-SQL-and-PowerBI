@@ -20,3 +20,14 @@ Chứa các bảng số liệu `.csv` tĩnh sinh ra tự động từ Code Pytho
 - `categorical_distribution.csv`
 - `category_kpi_summary.csv`
 - `monthly_revenue.csv`
+
+---
+
+# 💡 Báo cáo Chiến lược (Business Insights - Phase 8)
+Hai tài liệu dưới đây được viết bằng ngôn ngữ kinh doanh thông thường (Non-technical), dành riêng cho Ban Giám Đốc (C-Level) và các Trưởng phòng để ra quyết định kinh doanh dựa trên dữ liệu (Data-driven Decision Making).
+
+## 3. Tài liệu `executive_summary.md`
+**Báo cáo Tổng quan Kinh doanh:** Tóm tắt bức tranh sức khỏe tài chính của doanh nghiệp, hiệu suất từng ngành hàng, chân dung khách hàng và các điểm nghẽn trong khâu vận hành Logistics.
+
+## 4. Tài liệu `business_recommendations.md`
+**Đề xuất Hành động:** Các Action Items được chia theo từng phòng ban (Marketing, Sales, Logistics) để giải quyết triệt để các "nỗi đau" (Pain-points) tìm thấy ở báo cáo tổng quan.
