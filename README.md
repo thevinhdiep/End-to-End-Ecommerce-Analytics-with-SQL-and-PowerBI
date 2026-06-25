@@ -21,7 +21,7 @@ The goal is to demonstrate an end-to-end Data Analyst workflow:
 | Phase | Status | Main Deliverables |
 |---|---|---|
 | Phase 1 - Data Audit | Completed | `notebooks/01_data_audit.ipynb`, `docs/data_dictionary.md`, `reports/data_audit_summary.md` |
-| Phase 2 - Data Cleaning | Not started | `notebooks/02_data_cleaning.ipynb` |
+| Phase 2 - Data Cleaning | Completed | `notebooks/02_data_cleaning.ipynb` |
 | Phase 3 - Data Modeling | Not started | ERD, data model documentation |
 | Phase 4 - Data Warehouse | Not started | SQL schema scripts |
 | Phase 5 - ETL Pipeline | Not started | ETL SQL scripts |
