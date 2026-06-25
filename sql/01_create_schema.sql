@@ -56,7 +56,7 @@ CREATE TABLE fact_sales (
     payment_method VARCHAR(50),
     order_priority VARCHAR(50),
     sales DECIMAL(18, 2),
-    quantity INT,
+    quantity FLOAT,
     discount DECIMAL(5, 2),
     profit DECIMAL(18, 2),
     shipping_cost DECIMAL(18, 2),

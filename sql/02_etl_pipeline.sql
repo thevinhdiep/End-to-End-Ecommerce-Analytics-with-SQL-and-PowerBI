@@ -26,7 +26,7 @@ CREATE TABLE staging_orders (
     product_category NVARCHAR(100),
     product NVARCHAR(255),
     sales DECIMAL(18,2),
-    quantity INT,
+    quantity FLOAT,
     discount DECIMAL(5,2),
     profit DECIMAL(18,2),
     shipping_cost DECIMAL(18,2),
