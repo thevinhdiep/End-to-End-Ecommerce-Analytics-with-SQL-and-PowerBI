@@ -22,8 +22,8 @@ The goal is to demonstrate an end-to-end Data Analyst workflow:
 |---|---|---|
 | Phase 1 - Data Audit | Completed | `notebooks/01_data_audit.ipynb`, `docs/data_dictionary.md`, `reports/data_audit_summary.md` |
 | Phase 2 - Data Cleaning | Completed | `notebooks/02_data_cleaning.ipynb` |
-| Phase 3 - Data Modeling | Not started | ERD, data model documentation |
-| Phase 4 - Data Warehouse | Not started | SQL schema scripts |
+| Phase 3 - Data Modeling | Completed | ERD, data model documentation |
+| Phase 4 - Data Warehouse | Completed | `sql/01_create_schema.sql` |
 | Phase 5 - ETL Pipeline | Not started | ETL SQL scripts |
 | Phase 6 - Data Validation | Not started | Validation SQL scripts |
 | Phase 7 - SQL Analytics | Not started | Business analysis SQL scripts |
