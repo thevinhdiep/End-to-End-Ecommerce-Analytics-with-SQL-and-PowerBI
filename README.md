@@ -59,22 +59,29 @@ Dự án này là một **giải pháp phân tích dữ liệu toàn diện (Ful
 ```text
 Portfolio/
 |-- README.md
-|-- E-commerce Dataset.csv
+|-- data/
+|   |-- README.md
+|   |-- raw/
+|   |   `-- E-commerce Dataset.csv
+|   `-- cleaned/
+|       `-- cleaned_ecommerce_dataset.csv
 |-- docs/
+|   |-- README.md
 |   |-- data_dictionary.md
 |   |-- data_model.md
 |   `-- github_upload_guide.md
 |-- notebooks/
+|   |-- README.md
 |   |-- 01_data_audit.ipynb
 |   `-- 02_data_cleaning.ipynb
 |-- reports/
+|   |-- README.md
 |   |-- data_audit_summary.md
 |   `-- data_audit_tables/
-|-- sql/
-|   |-- 01_create_schema.sql
-|   `-- 02_etl_pipeline.sql
-`-- data/
-    `-- cleaned_ecommerce_dataset.csv
+`-- sql/
+    |-- README.md
+    |-- 01_create_schema.sql
+    `-- 02_etl_pipeline.sql
 ```
 
 ---
