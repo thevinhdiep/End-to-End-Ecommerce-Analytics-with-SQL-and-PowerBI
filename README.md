@@ -1,37 +1,60 @@
-# E-commerce Sales & Customer Behavior Analytics
+# **🛍️ Phân Tích Dữ Liệu & Hành Vi Khách Hàng E-Commerce (End-to-End Analytics)**
 
-## Project Overview
+## **🔎 1. Tổng quan dự án (Project Overview)**
 
-This portfolio project analyzes sales performance, customer behavior, profitability, payment methods, and shipping efficiency for an e-commerce business.
+Dự án này là một **giải pháp phân tích dữ liệu toàn diện (Full-Stack Data Solution)** cho doanh nghiệp thương mại điện tử dựa trên tập dữ liệu lịch sử năm 2018 (hơn 51,000 đơn hàng). Quy trình triển khai chuyên nghiệp và khép kín qua các trụ cột cốt lõi:
 
-The goal is to demonstrate an end-to-end Data Analyst workflow:
+| Trụ cột | 1. Xử lý Dữ liệu (Python) | 2. Xây dựng Data Warehouse | 3. SQL Advanced Analytics | 4. Power BI Dashboard |
+| :--- | :--- | :--- | :--- | :--- |
+| **Công cụ** | Pandas, Jupyter Notebook | SQL Server, T-SQL, ETL, 3NF | Window Functions, CTE | Power BI, DAX, Data Modeling |
 
-- Data Audit
-- Data Cleaning
-- Data Modeling
-- Data Warehouse Design
-- ETL Pipeline
-- Data Validation
-- SQL Analytics
-- Business Insights
-- Power BI Dashboard
+> 💡 **Lưu ý dành cho Nhà tuyển dụng / Technical Reviewer:**
+> File `README.md` này đóng vai trò là **Báo cáo tổng quan**. Bạn có thể truy cập chi tiết mã nguồn và tài liệu từng phần thông qua bảng liên kết nhanh dưới đây:
 
-## Current Status
+| Phân khu | Mô tả chi tiết | Liên kết nhanh |
+| :--- | :--- | :--- |
+| **1. Jupyter Notebooks** | File Python làm sạch dữ liệu, kiểm toán chất lượng dữ liệu | [notebooks/](./notebooks/) |
+| **2. Kiến trúc & Data Model** | Từ điển dữ liệu, sơ đồ ERD, thiết kế Star Schema | [docs/](./docs/) |
+| **3. Báo cáo Data Audit** | Tóm tắt chất lượng dữ liệu ban đầu | [reports/](./reports/) |
+| **4. Database & ETL** | Mã SQL tạo Schema 3NF và luồng nạp dữ liệu ETL | [sql/](./sql/) |
 
-| Phase | Status | Main Deliverables |
+---
+
+## **🎯 2. Tiến độ dự án (Current Status)**
+
+| Giai đoạn (Phase) | Trạng thái | Nguồn tài liệu (Deliverables) |
 |---|---|---|
-| Phase 1 - Data Audit | Completed | `notebooks/01_data_audit.ipynb`, `docs/data_dictionary.md`, `reports/data_audit_summary.md` |
-| Phase 2 - Data Cleaning | Completed | `notebooks/02_data_cleaning.ipynb` |
-| Phase 3 - Data Modeling | Completed | ERD, data model documentation |
-| Phase 4 - Data Warehouse | Completed | `sql/01_create_schema.sql` |
-| Phase 5 - ETL Pipeline | Not started | ETL SQL scripts |
-| Phase 6 - Data Validation | Not started | Validation SQL scripts |
-| Phase 7 - SQL Analytics | Not started | Business analysis SQL scripts |
-| Phase 8 - Business Insights | Not started | Executive summary and recommendations |
-| Phase 9 - Power BI Dashboard | Not started | `.pbix` file and dashboard screenshots |
-| Phase 10 - Final Repository | Not started | Final README and complete portfolio documentation |
+| **Phase 1 - Data Audit** | ✅ Hoàn thành | `notebooks/01_data_audit.ipynb`, `docs/data_dictionary.md`, `reports/data_audit_summary.md` |
+| **Phase 2 - Data Cleaning** | ✅ Hoàn thành | `notebooks/02_data_cleaning.ipynb` |
+| **Phase 3 - Data Modeling** | ✅ Hoàn thành | `docs/data_model.md` (Sơ đồ ERD) |
+| **Phase 4 - Data Warehouse** | ✅ Hoàn thành | `sql/01_create_schema.sql` |
+| **Phase 5 - ETL Pipeline** | ✅ Hoàn thành | `sql/02_etl_pipeline.sql` |
+| **Phase 6 - Data Validation** | ⏳ Chưa bắt đầu | Validation SQL scripts |
+| **Phase 7 - SQL Analytics** | ⏳ Chưa bắt đầu | Báo cáo phân tích kinh doanh bằng SQL |
+| **Phase 8 - Business Insights**| ⏳ Chưa bắt đầu | Báo cáo khuyến nghị và tổng kết |
+| **Phase 9 - Power BI Dashboard**| ⏳ Chưa bắt đầu | File `.pbix` và hình ảnh Dashboard |
+| **Phase 10 - Final Repository** | ⏳ Chưa bắt đầu | Cấu trúc lại toàn bộ kho lưu trữ |
 
-## Repository Structure
+---
+
+## **📌 3. Tóm tắt Kiểm toán Dữ liệu (Phase 1 Summary)**
+
+| Chỉ số | Giá trị |
+|---|---:|
+| **Số dòng** | 51,290 |
+| **Số cột** | 16 |
+| **Khách hàng Unique** | 38,997 |
+| **Danh mục sản phẩm** | 4 |
+
+**Kết quả chính:**
+- Dữ liệu đủ tốt để thực hiện các bài toán phân tích.
+- Thiếu sót một vài giá trị ở các cột quan trọng (đã được xử lý bằng Median/Unknown ở Phase 2).
+- Không có `Order_Id` trong dữ liệu gốc (Đã tạo Surrogate Key tự động ở Phase 2).
+- Khách hàng phần lớn đăng nhập dưới dạng Member.
+
+---
+
+## **⚙️ 4. Cấu trúc thư mục (Repository Structure)**
 
 ```text
 Portfolio/
@@ -39,80 +62,30 @@ Portfolio/
 |-- E-commerce Dataset.csv
 |-- docs/
 |   |-- data_dictionary.md
+|   |-- data_model.md
 |   `-- github_upload_guide.md
 |-- notebooks/
-|   `-- 01_data_audit.ipynb
-`-- reports/
-    |-- data_audit_summary.md
-    `-- data_audit_tables/
+|   |-- 01_data_audit.ipynb
+|   `-- 02_data_cleaning.ipynb
+|-- reports/
+|   |-- data_audit_summary.md
+|   `-- data_audit_tables/
+|-- sql/
+|   |-- 01_create_schema.sql
+|   `-- 02_etl_pipeline.sql
+`-- data/
+    `-- cleaned_ecommerce_dataset.csv
 ```
 
-## Phase 1 Summary
+---
 
-Dataset audit results:
+## **🚀 5. Hướng dẫn Review dự án**
 
-| Metric | Value |
-|---|---:|
-| Rows | 51,290 |
-| Columns | 16 |
-| Date range | 2018-01-01 to 2018-12-30 |
-| Duplicate rows | 0 |
-| Unique customers | 38,997 |
-| Unique products | 42 |
-| Unique product categories | 4 |
+Nếu bạn là nhà tuyển dụng hoặc reviewer, xin vui lòng xem xét dự án theo thứ tự sau:
 
-Key findings:
+1. **Khám phá Dữ liệu:** Xem `notebooks/01_data_audit.ipynb` và báo cáo `reports/data_audit_summary.md`.
+2. **Làm sạch Dữ liệu:** Xem cách tối ưu ở `notebooks/02_data_cleaning.ipynb`.
+3. **Mô hình hóa:** Đọc `docs/data_model.md` để xem tư duy thiết kế Star Schema.
+4. **Xây dựng DWH & ETL:** Khảo sát mã SQL tại `sql/01_create_schema.sql` và `sql/02_etl_pipeline.sql`.
 
-- Dataset quality is good enough for portfolio analytics.
-- Missing values are minimal but appear in business-critical fields.
-- `Payment_method` contains one `not_defined` value.
-- Raw data does not contain an `Order_Id`, so a surrogate key will be needed later.
-- `Fashion` is the largest product category by revenue and profit.
-
-## GitHub Upload Rule
-
-After each phase, upload only polished files that create portfolio value.
-
-Do upload:
-
-- Completed notebooks
-- SQL scripts
-- Documentation
-- ERD diagrams
-- Dashboard screenshots
-- Business insight reports
-
-Do not upload:
-
-- Draft notebooks
-- Backup files
-- Temporary files
-- Error screenshots
-- Multiple versions of the same dataset
-- Test scripts
-
-Detailed guide: [docs/github_upload_guide.md](docs/github_upload_guide.md)
-
-## Phase Upload Checklist
-
-| Phase | Files To Upload | Commit Message |
-|---|---|---|
-| Phase 1 | `notebooks/01_data_audit.ipynb`, `docs/data_dictionary.md` | `Phase 1 - Data Audit & Data Understanding` |
-| Phase 2 | `notebooks/02_data_cleaning.ipynb` | `Phase 2 - Data Cleaning & Feature Engineering` |
-| Phase 3 | `images/erd.png`, `docs/data_model.md` | `Phase 3 - Data Modeling & Star Schema Design` |
-| Phase 4 | `sql/01_create_schema.sql` | `Phase 4 - Data Warehouse Schema Implementation` |
-| Phase 5 | `sql/02_etl_pipeline.sql` | `Phase 5 - ETL Pipeline Development` |
-| Phase 6 | `sql/03_data_validation.sql` | `Phase 6 - Data Validation & Quality Assurance` |
-| Phase 7 | SQL analytics scripts | `Phase 7 - Business Analytics with SQL` |
-| Phase 8 | `reports/executive_summary.md`, `reports/business_recommendations.md` | `Phase 8 - Business Insights & Recommendations` |
-| Phase 9 | `dashboard/Ecommerce_Analytics.pbix`, dashboard screenshots | `Phase 9 - Power BI Dashboard Development` |
-
-## How To Review This Project
-
-Start with:
-
-1. `notebooks/01_data_audit.ipynb`
-2. `docs/data_dictionary.md`
-3. `reports/data_audit_summary.md`
-
-Then follow each phase in order as the project grows.
+*(Các phase tiếp theo đang trong quá trình hoàn thiện...)*
