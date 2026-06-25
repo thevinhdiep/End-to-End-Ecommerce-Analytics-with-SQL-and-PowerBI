@@ -43,3 +43,16 @@ Chứa các truy vấn phân tích chuyên sâu (Advanced SQL) dùng để trả
 | **3. Category Profitability** | Đánh giá hiệu suất ngành hàng. Gom nhóm (`GROUP BY`) tính tổng doanh thu, lợi nhuận và dùng biểu thức toán học tính Biên lợi nhuận (Profit Margin %). Dùng `NULLIF()` để bẫy lỗi chia cho 0. |
 | **4. Shipping Efficiency** | Kiểm tra hệ thống Logistics. Tính thời gian xử lý trung bình (Average Aging) và dùng cấu trúc `CASE WHEN` trong mệnh đề `ORDER BY` để sắp xếp độ ưu tiên chuẩn xác. |
 | **5. RFM Segmentation** | Phân khúc khách hàng tự động bằng SQL. Dùng Common Table Expression (CTE) kết hợp `DATEDIFF` để tính toán khoảng cách mua hàng (Recency). Áp dụng Window Function `NTILE(4)` để chấm điểm RFM động cho khách hàng. |
+
+---
+
+## 5. Kết quả Phân tích (Analytics Results)
+*(Thư mục này là nơi bạn trưng bày kết quả chạy code thực tế)*
+
+### Báo cáo 1: Xu hướng Doanh thu hàng tháng & YTD
+![YTD_Revenue](../assets/sql_report_1.png)
+> 💡 **Key Insight:** Doanh thu tăng trưởng ổn định qua từng tháng. Bắt đầu có dấu hiệu tăng vọt vào quý cuối năm (Mùa lễ hội). Dòng tiền lũy kế (YTD) chứng tỏ doanh nghiệp đang duy trì mức tăng trưởng dương liên tục.
+
+### Báo cáo 2: Xếp hạng Top 5 Khách hàng mang lại Doanh thu cao nhất
+![Top_Customers](../assets/sql_report_2.png)
+> 💡 **Key Insight:** Định luật 80/20 được thể hiện rõ. Các khách hàng Top đầu (VIP) tuy chiếm số lượng nhỏ nhưng lại tạo ra lượng doanh thu và lợi nhuận khổng lồ. Doanh nghiệp cần lập tức đưa nhóm này vào chương trình chăm sóc đặc biệt (Loyalty Program).

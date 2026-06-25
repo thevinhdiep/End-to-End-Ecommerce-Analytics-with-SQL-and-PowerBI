@@ -44,7 +44,7 @@ GO
 -- LƯU Ý: Thay đổi đường dẫn 'C:\Path\To\Your\Portfolio\data\cleaned_ecommerce_dataset.csv'
 -- thành đường dẫn tuyệt đối (Absolute Path) trên máy của bạn trước khi chạy.
 BULK INSERT staging_orders
-FROM 'C:\Users\Dell\Desktop\Portfolio\data\cleaned_ecommerce_dataset.csv'
+FROM 'C:\Users\Dell\Desktop\Portfolio\data\cleaned\cleaned_ecommerce_dataset.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2, -- Bỏ qua dòng tiêu đề
