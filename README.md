@@ -32,7 +32,7 @@ Dự án này là một **giải pháp phân tích dữ liệu toàn diện (Ful
 | **Phase 6 - Data Validation** | ✅ Hoàn thành | `sql/03_data_validation.sql` |
 | **Phase 7 - SQL Analytics** | ✅ Hoàn thành | `sql/04_business_analytics.sql` |
 | **Phase 8 - Business Insights**| ✅ Hoàn thành | `reports/executive_summary.md`, `reports/business_recommendations.md` |
-| **Phase 9 - Power BI Dashboard**| ⏳ Chưa bắt đầu | File `.pbix` và hình ảnh Dashboard |
+| **Phase 9 - Power BI Dashboard**| ✅ Hoàn thành | `dashboard/README.md`, `dashboard/dashboard_mockup.png` |
 | **Phase 10 - Final Repository** | ⏳ Chưa bắt đầu | Cấu trúc lại toàn bộ kho lưu trữ |
 
 ---
@@ -59,6 +59,9 @@ Dự án này là một **giải pháp phân tích dữ liệu toàn diện (Ful
 ```text
 Portfolio/
 |-- README.md
+|-- dashboard/
+|   |-- README.md
+|   `-- dashboard_mockup.png
 |-- data/
 |   |-- README.md
 |   |-- raw/
@@ -76,12 +79,16 @@ Portfolio/
 |   `-- 02_data_cleaning.ipynb
 |-- reports/
 |   |-- README.md
+|   |-- executive_summary.md
+|   |-- business_recommendations.md
 |   |-- data_audit_summary.md
 |   `-- data_audit_tables/
 `-- sql/
     |-- README.md
     |-- 01_create_schema.sql
-    `-- 02_etl_pipeline.sql
+    |-- 02_etl_pipeline.sql
+    |-- 03_data_validation.sql
+    `-- 04_business_analytics.sql
 ```
 
 ---
